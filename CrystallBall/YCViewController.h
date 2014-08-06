@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class YCCrystallBall; //forward declaration
+
 @interface YCViewController : UIViewController
+
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) YCCrystallBall *crystallBall;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @end

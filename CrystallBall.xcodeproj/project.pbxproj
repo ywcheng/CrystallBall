@@ -22,6 +22,9 @@
 		DA1E07FA198FD77E000C4382 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1E07D9198FD77E000C4382 /* UIKit.framework */; };
 		DA1E0802198FD77E000C4382 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA1E0800198FD77E000C4382 /* InfoPlist.strings */; };
 		DA1E0804198FD77E000C4382 /* CrystallBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA1E0803198FD77E000C4382 /* CrystallBallTests.m */; };
+		DA4067AA1992510600C87007 /* YCCrystallBall.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4067A91992510600C87007 /* YCCrystallBall.m */; };
+		DAFCF7AE199287E700864D40 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DAFCF7AD199287E700864D40 /* crystal_ball.mp3 */; };
+		DAFCF7B01992881200864D40 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAFCF7AF1992881200864D40 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,10 @@
 		DA1E07FF198FD77E000C4382 /* CrystallBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystallBallTests-Info.plist"; sourceTree = "<group>"; };
 		DA1E0801198FD77E000C4382 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA1E0803198FD77E000C4382 /* CrystallBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystallBallTests.m; sourceTree = "<group>"; };
+		DA4067A81992510600C87007 /* YCCrystallBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCCrystallBall.h; sourceTree = "<group>"; };
+		DA4067A91992510600C87007 /* YCCrystallBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCCrystallBall.m; sourceTree = "<group>"; };
+		DAFCF7AD199287E700864D40 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		DAFCF7AF1992881200864D40 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFCF7B01992881200864D40 /* AudioToolbox.framework in Frameworks */,
 				DA1E07D8198FD77E000C4382 /* CoreGraphics.framework in Frameworks */,
 				DA1E07DA198FD77E000C4382 /* UIKit.framework in Frameworks */,
 				DA1E07D6198FD77E000C4382 /* Foundation.framework in Frameworks */,
@@ -103,6 +111,7 @@
 		DA1E07D4198FD77E000C4382 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAFCF7AF1992881200864D40 /* AudioToolbox.framework */,
 				DA1E07D5198FD77E000C4382 /* Foundation.framework */,
 				DA1E07D7198FD77E000C4382 /* CoreGraphics.framework */,
 				DA1E07D9198FD77E000C4382 /* UIKit.framework */,
@@ -114,14 +123,15 @@
 		DA1E07DB198FD77E000C4382 /* CrystallBall */ = {
 			isa = PBXGroup;
 			children = (
-				DA1E07E4198FD77E000C4382 /* YCAppDelegate.h */,
-				DA1E07E5198FD77E000C4382 /* YCAppDelegate.m */,
 				DA1E07E7198FD77E000C4382 /* Main_iPhone.storyboard */,
 				DA1E07EA198FD77E000C4382 /* Main_iPad.storyboard */,
 				DA1E07ED198FD77E000C4382 /* YCViewController.h */,
 				DA1E07EE198FD77E000C4382 /* YCViewController.m */,
+				DAFCF7AD199287E700864D40 /* crystal_ball.mp3 */,
 				DA1E07F0198FD77E000C4382 /* Images.xcassets */,
 				DA1E07DC198FD77E000C4382 /* Supporting Files */,
+				DA4067A81992510600C87007 /* YCCrystallBall.h */,
+				DA4067A91992510600C87007 /* YCCrystallBall.m */,
 			);
 			path = CrystallBall;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 		DA1E07DC198FD77E000C4382 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DA1E07E4198FD77E000C4382 /* YCAppDelegate.h */,
+				DA1E07E5198FD77E000C4382 /* YCAppDelegate.m */,
 				DA1E07DD198FD77E000C4382 /* CrystallBall-Info.plist */,
 				DA1E07DE198FD77E000C4382 /* InfoPlist.strings */,
 				DA1E07E1198FD77E000C4382 /* main.m */,
@@ -235,6 +247,7 @@
 				DA1E07EC198FD77E000C4382 /* Main_iPad.storyboard in Resources */,
 				DA1E07F1198FD77E000C4382 /* Images.xcassets in Resources */,
 				DA1E07E9198FD77E000C4382 /* Main_iPhone.storyboard in Resources */,
+				DAFCF7AE199287E700864D40 /* crystal_ball.mp3 in Resources */,
 				DA1E07E0198FD77E000C4382 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4067AA1992510600C87007 /* YCCrystallBall.m in Sources */,
 				DA1E07E6198FD77E000C4382 /* YCAppDelegate.m in Sources */,
 				DA1E07EF198FD77E000C4382 /* YCViewController.m in Sources */,
 				DA1E07E2198FD77E000C4382 /* main.m in Sources */,
@@ -391,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystallBall/CrystallBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystallBall/CrystallBall-Info.plist";
@@ -404,6 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystallBall/CrystallBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystallBall/CrystallBall-Info.plist";
@@ -471,6 +487,7 @@
 				DA1E0809198FD77E000C4382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA1E080A198FD77E000C4382 /* Build configuration list for PBXNativeTarget "CrystallBallTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +496,7 @@
 				DA1E080C198FD77E000C4382 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
